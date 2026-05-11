@@ -45,6 +45,14 @@ Run tests:
 pytest tests/
 ```
 
+## Web Interface
+
+```
+streamlit run app.py
+```
+
+Opens a browser UI with the same Quarter Diff and Longitudinal Analysis modes as the CLI, plus an interactive signal dataframe and one-click report downloads.
+
 ## How It Works
 
 The fetcher queries the Motley Fool SOLR search endpoint (`https://www.fool.com/search/solr.aspx`) with a `{ticker} earnings call transcript` query, filters results by headline, and retrieves the two most recent transcript pages. Each page is parsed with BeautifulSoup to extract the article body. All HTTP requests use a 30-second timeout with up to three retries on server errors (exponential backoff). If the SOLR endpoint fails or returns no results, the tool exits with a clear error message. The `--use-fixtures` flag bypasses all network calls and loads transcripts from `tests/fixtures/`, which is the recommended mode during development.
