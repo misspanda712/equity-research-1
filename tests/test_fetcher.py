@@ -8,10 +8,15 @@ import requests
 from src.fetcher import (
     HEADERS,
     SOLR_URL,
+    _get_cik,
+    _get_edgar_filings,
     _get_with_retry,
+    _parse_press_release,
     _parse_transcript_page,
     _search_solr,
     fetch_transcripts,
+    fetch_transcripts_auto,
+    fetch_transcripts_edgar,
     load_from_file,
 )
 from src.models import Transcript
@@ -344,3 +349,112 @@ class TestFetchTranscripts:
         assert all(isinstance(t, Transcript) for t in transcripts)
         assert transcripts[0].quarter == "Q4"
         assert transcripts[1].quarter == "Q3"
+
+
+# ---------------------------------------------------------------------------
+# TestEdgarFetcher
+# ---------------------------------------------------------------------------
+
+class TestEdgarFetcher:
+    def _make_mock_resp(self, json_data):
+        mock_resp = MagicMock()
+        mock_resp.status_code = 200
+        mock_resp.json.return_value = json_data
+        return mock_resp
+
+    def test_get_cik_found(self):
+        data = {"0": {"cik_str": "12345", "ticker": "fang", "title": "Diamondback Energy"}}
+        with patch("src.fetcher._get_with_retry", return_value=self._make_mock_resp(data)):
+            result = _get_cik("FANG")
+        assert result == "0000012345"
+
+    def test_get_cik_not_found(self):
+        with patch("src.fetcher._get_with_retry", return_value=self._make_mock_resp({})):
+            with pytest.raises(ValueError, match="not found in SEC EDGAR"):
+                _get_cik("ZZZZ")
+
+    def test_get_cik_case_insensitive(self):
+        data = {"0": {"cik_str": "12345", "ticker": "fang", "title": "Diamondback Energy"}}
+        with patch("src.fetcher._get_with_retry", return_value=self._make_mock_resp(data)):
+            result = _get_cik("FANG")
+        assert result == "0000012345"
+
+    def test_get_edgar_filings_filters_by_form(self):
+        submissions = {
+            "filings": {
+                "recent": {
+                    "form": ["8-K", "10-Q", "8-K"],
+                    "filingDate": ["2025-02-07", "2025-01-15", "2024-11-01"],
+                    "accessionNumber": ["0001234567-25-000001", "0001234567-25-000002", "0001234567-24-000003"],
+                    "primaryDocument": ["doc1.htm", "doc2.htm", "doc3.htm"],
+                }
+            }
+        }
+        with patch("src.fetcher._get_with_retry", return_value=self._make_mock_resp(submissions)):
+            results = _get_edgar_filings("0000123456", ["8-K"], 10)
+        assert len(results) == 2
+        assert all(r["form"] == "8-K" for r in results)
+
+    def test_get_edgar_filings_returns_n(self):
+        submissions = {
+            "filings": {
+                "recent": {
+                    "form": ["8-K"] * 5,
+                    "filingDate": [f"2025-0{i}-01" for i in range(1, 6)],
+                    "accessionNumber": [f"0001234567-25-00000{i}" for i in range(1, 6)],
+                    "primaryDocument": [f"doc{i}.htm" for i in range(1, 6)],
+                }
+            }
+        }
+        with patch("src.fetcher._get_with_retry", return_value=self._make_mock_resp(submissions)):
+            results = _get_edgar_filings("0000123456", ["8-K"], 2)
+        assert len(results) == 2
+
+    def test_parse_press_release_quarter_detection(self):
+        html = "<html><body><h1>Acme Corp</h1><p>Fourth Quarter 2024 Results were strong.</p></body></html>"
+        t = _parse_press_release(html, "FANG", "2025-02-07", "https://example.com")
+        assert t.quarter == "Q4"
+        assert t.year == 2024
+
+    def test_parse_press_release_prepends_source_note(self):
+        html = "<html><body><p>Some earnings text.</p></body></html>"
+        t = _parse_press_release(html, "FANG", "2025-02-07", "https://example.com")
+        assert t.text.startswith("SOURCE: SEC EDGAR")
+
+    def test_fetch_transcripts_auto_falls_back(self):
+        t1 = Transcript("IMO", "Imperial Oil", "Q4", 2024, "2025-02-07", "https://example.com", "text1")
+        t2 = Transcript("IMO", "Imperial Oil", "Q3", 2024, "2024-11-01", "https://example.com", "text2")
+
+        with patch("src.fetcher.fetch_transcripts_edgar", side_effect=ValueError("EDGAR failed")):
+            with patch("src.fetcher.fetch_transcripts", return_value=[t1, t2]):
+                result = fetch_transcripts_auto("IMO")
+
+        assert result == [t1, t2]
+
+    def test_fetch_transcripts_auto_uses_edgar_first(self):
+        t1 = Transcript("IMO", "Imperial Oil", "Q4", 2024, "2025-02-07", "https://example.com/edgar", "edgar text")
+        t2 = Transcript("IMO", "Imperial Oil", "Q3", 2024, "2024-11-01", "https://example.com/edgar", "edgar text 2")
+
+        with patch("src.fetcher.fetch_transcripts_edgar", return_value=[t1, t2]) as mock_edgar:
+            with patch("src.fetcher.fetch_transcripts") as mock_mf:
+                result = fetch_transcripts_auto("IMO")
+
+        mock_edgar.assert_called_once()
+        mock_mf.assert_not_called()
+        assert result == [t1, t2]
+
+    def test_canadian_ticker_uses_6k(self):
+        t1 = Transcript("IMO", "Imperial Oil", "Q4", 2024, "2025-02-07", "https://example.com", "text1")
+        t2 = Transcript("IMO", "Imperial Oil", "Q3", 2024, "2024-11-01", "https://example.com", "text2")
+
+        with patch("src.fetcher._get_cik", return_value="0000049196"):
+            with patch("src.fetcher._get_edgar_filings", return_value=[
+                {"form": "6-K", "date": "2025-02-07", "accession": "0000049196-25-000001", "primary_doc": "doc1.htm"},
+                {"form": "6-K", "date": "2024-11-01", "accession": "0000049196-24-000002", "primary_doc": "doc2.htm"},
+            ]) as mock_filings:
+                with patch("src.fetcher._fetch_edgar_exhibit", return_value=("<html><body><p>text</p></body></html>", "doc.htm")):
+                    fetch_transcripts_edgar("IMO")
+
+        mock_filings.assert_called_once()
+        call_args = mock_filings.call_args
+        assert call_args[0][1] == ["6-K"]

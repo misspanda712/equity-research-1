@@ -37,6 +37,12 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Load transcripts from tests/fixtures/ instead of fetching from Motley Fool",
     )
+    parser.add_argument(
+        "--source",
+        choices=["edgar", "motleyfool", "auto"],
+        default="auto",
+        help="Transcript source: edgar (SEC EDGAR press releases), motleyfool, or auto (EDGAR first, fallback to Motley Fool)",
+    )
     return parser
 
 
@@ -59,11 +65,19 @@ def load_fixture_transcripts(ticker: str):
     return current, prior
 
 
-def fetch_live_transcripts(ticker: str):
-    from src.fetcher import fetch_transcripts
+def fetch_live_transcripts(ticker: str, source: str = "auto"):
+    from src.fetcher import fetch_transcripts, fetch_transcripts_auto, fetch_transcripts_edgar
 
-    print(f"Fetching transcripts for {ticker.upper()} from Motley Fool...")
-    transcripts = fetch_transcripts(ticker)
+    if source == "edgar":
+        print(f"Fetching transcripts for {ticker.upper()} from SEC EDGAR...")
+        transcripts = fetch_transcripts_edgar(ticker)
+    elif source == "motleyfool":
+        print(f"Fetching transcripts for {ticker.upper()} from Motley Fool...")
+        transcripts = fetch_transcripts(ticker)
+    else:
+        print(f"Fetching transcripts for {ticker.upper()} (EDGAR with Motley Fool fallback)...")
+        transcripts = fetch_transcripts_auto(ticker)
+
     current = transcripts[0]
     prior = transcripts[1]
     return current, prior
@@ -89,7 +103,7 @@ def main():
             )
             sys.exit(1)
         try:
-            current, prior = fetch_live_transcripts(ticker)
+            current, prior = fetch_live_transcripts(ticker, source=args.source)
         except ValueError as e:
             print(f"Error: {e}", file=sys.stderr)
             sys.exit(1)
