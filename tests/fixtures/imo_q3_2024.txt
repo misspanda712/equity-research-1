@@ -1,0 +1,67 @@
+Company: Imperial Oil Limited
+Ticker: IMO
+Quarter: Q3
+Year: 2024
+Date: 2024-11-01
+URL: https://www.fool.com/earnings/call-transcripts/2024/11/01/imperial-oil-q3-2024-earnings-call-transcript/
+
+Imperial Oil Limited (IMO) Q3 2024 Earnings Call Transcript
+November 1, 2024
+
+OPERATOR: Good morning and welcome to Imperial Oil's third quarter 2024 earnings conference call. All participants are in listen-only mode. Following the presentation there will be a question-and-answer session. I would now like to turn the call over to Dave Hughes, Vice President of Finance and CFO.
+
+DAVE HUGHES - CFO: Thank you, operator. Good morning everyone and welcome to Imperial Oil's third quarter 2024 earnings call. Joining me today is Brad Corson, Chairman, President and CEO.
+
+Before we begin, I want to remind everyone that today's comments may include forward-looking statements. Actual results may differ materially from those expressed or implied. Please refer to our most recent AIF filed on SEDAR for a complete discussion of risk factors.
+
+BRAD CORSON - CEO: Good morning, everyone. We delivered solid operational performance in Q3, though we did face some headwinds from unplanned maintenance at Kearl that compressed volumes in the quarter.
+
+On production, Kearl averaged approximately 398,000 barrels per day gross in Q3, which was below our planned rate due to a compressor outage in mid-August that we resolved by late September. Cold Lake production was in line with expectations at roughly 141,000 barrels per day. On a total company basis, we produced approximately 423,000 barrels of oil equivalent per day in Q3.
+
+Looking at full-year 2024 guidance, we are maintaining our production outlook at 420 to 430 kboe/d, though I would note that given the Q3 shortfall we expect Q4 to carry a heavier weighting to achieve that range. Kearl reliability remains our primary operational focus heading into winter.
+
+On the financial side, we generated $1.1 billion of cash from operating activities in the quarter and returned approximately $520 million to shareholders through our NCIB and dividends combined.
+
+Turning to capital allocation, our 2024 capital budget remains at $1.7 billion as guided at the start of the year. We have not seen any reason to adjust that number. For 2025, we are in the planning process and will provide formal guidance with our Q4 results as is our practice. I will say directionally we are evaluating a modest step-up in capital to support Kearl's reliability program and some Cold Lake growth investments, but we want to work through the budget process before committing to a number. I would characterize the incremental spend, if approved, as measured and disciplined — nothing that would alter our return of capital priorities.
+
+On our shareholder return program, our Normal Course Issuer Bid expires in June 2025. The board evaluates the program annually, and we will make a determination on renewal as we approach that date. We remain committed to our dividend, which we have grown consistently, and the NCIB is an important part of how we return surplus cash to shareholders. No decisions have been made on extension at this point.
+
+On hedging, Imperial's long-standing policy is to remain substantially unhedged on crude oil pricing, which allows our shareholders full exposure to commodity price upside. We have modest financial hedging in place on Canadian dollar exposure but no material crude price hedges. That posture has not changed and we don't anticipate changing it.
+
+On risk factors, we continue to monitor the Trans Mountain Expansion pipeline, which began commercial operations in May. TMX capacity is creating incremental egress for Western Canadian heavy oil and we are seeing some benefit at the margin on differentials. That said, we remain watchful of demand signals from Asian refiners and any softening in heavy crude premiums. We are also monitoring the impact of U.S. tariff policy on Canadian energy exports, though direct effects on our business remain limited given our integrated downstream position.
+
+DAVE HUGHES - CFO: Thank you, Brad. Turning to the financial results, Q3 net income was $1.23 per share on a diluted basis, down from $1.67 in Q3 2023, primarily reflecting lower realized prices. Refinery utilization was 93%, slightly below our typical run rate due to planned turnaround work at our Strathcona refinery in September.
+
+Operating costs at Kearl were $24.10 per barrel in Q3, which was modestly elevated due to the compressor repair work. We expect to return to our target range of $22 to $23 per barrel in Q4 as utilization normalizes.
+
+Cash and equivalents at quarter-end were $1.4 billion. Our balance sheet remains in excellent shape with net debt of approximately $400 million.
+
+OPERATOR: We will now open the line for questions. Our first question comes from Greg Pardy at RBC Capital Markets.
+
+GREG PARDY - RBC CAPITAL MARKETS: Good morning, Brad and Dave. Brad, on the 2025 capital budget, I know you don't want to get ahead of yourselves, but can you give any more colour on the quantum of the step-up you're evaluating and what specifically it would be directed at?
+
+BRAD CORSON - CEO: Greg, I appreciate the question. We're still working through our internal budget process and don't want to front-run our own guidance cycle. What I can say is the incremental dollars, if approved, would be primarily directed at reliability improvement at Kearl — specifically some debottlenecking work around the secondary extraction circuit — and a portion would go toward the Grand Rapids development at Cold Lake, which has continued to perform very well. We would be comfortable characterizing the step-up as sub-20% above our current year level, but again, formal guidance comes in February.
+
+GREG PARDY - RBC CAPITAL MARKETS: That's helpful. And on the NCIB renewal, is there any reason to think the board wouldn't renew, given the strong balance sheet and your free cash flow profile?
+
+BRAD CORSON - CEO: No reason not to renew — our capital allocation framework prioritizes shareholder returns and we've been consistent on that. The timing of the renewal announcement will follow our normal process. I wouldn't read anything into the absence of an announcement today.
+
+PHIL GRESH - JPMORGAN: Good morning. Phil Gresh from JPMorgan. On the operating cost side, can you speak to the trajectory into 2025? You've been running above your $22 to $23 target range at Kearl — should we think about that as a sustainable improvement or is there structural inflation in the labour and energy cost buckets?
+
+DAVE HUGHES - CFO: Phil, the Q3 cost elevation was largely event-driven — the compressor work pulled forward some maintenance spend. Structurally, we are still targeting $22 to $23 per barrel at Kearl for 2025. Energy costs have moderated somewhat alongside natural gas prices. Labour inflation is a real factor in the region and we've incorporated that into our planning. I wouldn't build in meaningful improvement below $22 at this stage.
+
+PHIL GRESH - JPMORGAN: And on the TMX differential benefit, are you able to quantify what you saw in Q3 and your expectations for that going into 2025?
+
+BRAD CORSON - CEO: We don't break that out specifically, but I can say the benefit has been real — we've seen Western Canadian Select differentials narrow relative to WTI compared to this time last year and we do attribute some of that to incremental TMX throughput. The question is durability — we need Asian refinery demand to be there to absorb the incremental barrels. We are cautiously optimistic but not assuming a step-change in realized prices in our planning assumptions.
+
+OPERATOR: Our next question comes from Menno Hulshof at TD Securities.
+
+MENNO HULSHOF - TD SECURITIES: Thanks. Good morning. Brad, on Cold Lake and Grand Rapids specifically, you mentioned it continues to perform well. Can you update us on the recovery factors you're seeing and whether the program could be expanded beyond what's currently planned?
+
+BRAD CORSON - CEO: Grand Rapids continues to deliver above our initial expectations. Recovery factors have been tracking above pre-sanction estimates and the steam-to-oil ratios have been favourable. We are studying whether additional phases make sense. It's premature to announce anything today but Grand Rapids is one of the more interesting growth optionalities in our portfolio and the data continues to support further investment over time.
+
+MENNO HULSHOF - TD SECURITIES: And a quick one on the dividend — with earnings down year-over-year and your payout ratio moving up, how do you think about the next dividend review?
+
+DAVE HUGHES - CFO: Our dividend policy is anchored to long-term earnings power, not any single quarter's result. We've grown the dividend every year for over a decade and that track record reflects our confidence in the business through the cycle. The current earnings environment is softer than last year but our balance sheet is strong, cash generation is solid, and we have line of sight on the business performing well. I'd expect the dividend to continue to increase in line with our history.
+
+OPERATOR: This concludes our Q3 2024 earnings call. Thank you for joining.

@@ -1,0 +1,61 @@
+Company: Imperial Oil Limited
+Ticker: IMO
+Quarter: Q4
+Year: 2024
+Date: 2025-02-07
+URL: https://www.fool.com/earnings/call-transcripts/2025/02/07/imperial-oil-q4-2024-earnings-call-transcript/
+
+Imperial Oil Limited (IMO) Q4 2024 Earnings Call Transcript
+February 7, 2025
+
+OPERATOR: Good morning and welcome to Imperial Oil's fourth quarter and full-year 2024 earnings conference call. I will now turn the call over to Dave Hughes, Vice President of Finance and CFO.
+
+DAVE HUGHES - CFO: Thank you and good morning. Joining me is Brad Corson, Chairman, President and CEO. Before we begin, I'll remind everyone that forward-looking statements are subject to risks and uncertainties as described in our AIF and other regulatory filings.
+
+BRAD CORSON - CEO: Thank you, Dave. Good morning, everyone. Q4 capped a strong year for Imperial. Kearl delivered its best quarterly production rate since the mine expansion was completed, averaging 427,000 barrels per day gross in Q4. Cold Lake was similarly strong at 147,000 barrels per day. Full-year 2024 production came in at 428,000 barrels of oil equivalent per day, which is at the top of our guided range and represents a record for the company.
+
+That operational delivery sets us up well for what I think will be an even better year ahead. Let me go directly to our 2025 guidance.
+
+On capital, we are setting our 2025 capital budget at $2.1 billion, up from $1.7 billion in 2024. This is a deliberate and considered increase. Approximately $800 million is directed at Kearl reliability and debottlenecking — we are completing the secondary extraction circuit work that I referenced last quarter, along with some incremental tailings management infrastructure. A further $600 million goes to Cold Lake, the majority of which is Phase 2 of Grand Rapids. The balance covers sustaining capital and our downstream segment. We are not chasing growth for its own sake — every dollar in this budget is tied to a project with clear economics at our planning price deck of $70 WTI.
+
+On production, we are guiding 2025 full-year volumes at 430 to 440 kboe/d. That reflects the improved Kearl reliability we expect from the investments I just described, continued strong Cold Lake performance, and a normal maintenance schedule with no major planned turnarounds until Q3. The midpoint of 435 kboe/d would be a new production record for the company.
+
+Turning to shareholder returns, the board has approved the renewal and extension of our Normal Course Issuer Bid for an additional 12 months, effective this month. We are authorized to repurchase up to 5% of our outstanding shares. In 2024, we repurchased $1.1 billion in shares and paid $280 million in dividends, returning a total of $1.4 billion to shareholders. For 2025, we are targeting total shareholder returns of at least $1.5 billion assuming WTI prices consistent with current strip, with the NCIB as the primary vehicle given our view that shares remain attractively valued. We are also announcing a 13% increase in our quarterly dividend to $0.44 per share, effective with the March payment.
+
+On hedging, our policy remains to carry no material crude price hedges. We did execute modest WCS-WTI differential hedges in late Q4 — approximately 20,000 barrels per day at a differential of minus $14.50 for Q1 and Q2 2025 — which provides some floor protection on Canadian crude realizations through the period of elevated uncertainty around U.S. tariff policy on Canadian energy exports. This is a tactical adjustment, not a policy change. Our view on commodity prices remains constructive and we do not intend to expand the hedge book beyond this position.
+
+Let me address the tariff situation directly, as I know it's top of mind. The Biden-era tariff exemptions for Canadian energy are being actively reviewed by the incoming administration. If a tariff were imposed on Canadian crude exports to the United States, the direct impact on Imperial would be partially mitigated by our integrated refining position — we refine a material share of our own production at Strathcona. However, a sustained 10% tariff would have a meaningful effect on WCS differentials industrywide and we have modelled that scenario. We have not changed our capital program based on that analysis, but it is a genuine risk that didn't feature in our planning last year and warrants disclosure.
+
+DAVE HUGHES - CFO: Thank you, Brad. Full-year 2024 net income was $4.46 per diluted share, down 11% from 2023 primarily on lower realized prices. Q4 net income was $1.31 per diluted share, an improvement sequentially from Q3 as Kearl returned to full production rates. Operating costs at Kearl averaged $22.40 per barrel for the full year, within our $22 to $23 guidance range. We ended the year with $1.6 billion in cash and a net debt position of approximately $200 million — our balance sheet is effectively ungeared.
+
+Free cash flow for 2024 was $2.3 billion, up slightly year-over-year despite the lower price environment, reflecting strong volume delivery and cost discipline.
+
+On the 2025 capital guidance, I want to be clear that the $2.1 billion budget represents an increase in absolute dollars but our free cash flow profile at current strip pricing still fully funds both the capital program and our targeted shareholder returns with cash to spare. We are not stretching the balance sheet.
+
+OPERATOR: We will now take questions. Our first question is from Greg Pardy at RBC Capital Markets.
+
+GREG PARDY - RBC CAPITAL MARKETS: Good morning. Excellent results and guidance. Brad, on the capex step-up to $2.1 billion, can you walk through the IRR thresholds you're using for the Kearl debottlenecking and Grand Rapids Phase 2 specifically?
+
+BRAD CORSON - CEO: Greg, we typically don't disclose project-level IRRs but I can tell you our hurdle rate for oil sands sustaining and reliability projects is in the mid-teens, and for growth projects like Grand Rapids it's above 20% at $70 WTI. Grand Rapids Phase 1 has been exceeding those returns in practice — steam-to-oil ratios have been better than modelled by roughly 15% and production ramp-up has been ahead of schedule. Phase 2 uses the same geology and reservoir characterization so we have high confidence in the economics. The Kearl debottlenecking is a reliability investment primarily — lower headline IRR but essential to sustaining the production base we've built.
+
+GREG PARDY - RBC CAPITAL MARKETS: Helpful. And on the WCS differential hedges — is this a signal that you're more worried about the tariff situation than you've let on, or is it genuinely tactical?
+
+BRAD CORSON - CEO: Genuinely tactical, Greg. We saw an opportunity to lock in known differentials for a period of meaningful uncertainty at a cost we thought was reasonable. It does not reflect a bearish view on the medium-term commodity backdrop. If anything, our constructive view on WTI and on Asian demand absorbing TMX barrels has been reinforced by what we've seen over the last six months.
+
+PHIL GRESH - JPMORGAN: Good morning. Phil Gresh from JPMorgan. On the production guidance of 430 to 440, can you talk about the quarterly phasing? Is Q1 constrained by cold weather or are you effectively at full run-rate from the start of the year?
+
+DAVE HUGHES - CFO: Phil, Q1 will be our lowest volume quarter as always — cold temperatures at Kearl affect bitumen extraction efficiency and we have some early-year maintenance planned at Cold Lake. We'd model Q1 in the 415 to 420 range gross at Kearl, with acceleration through Q2 and Q3 as the debottlenecking work comes online. The exit rate for 2025 could be north of 450,000 barrels per day at Kearl if everything executes on plan — that's the opportunity.
+
+PHIL GRESH - JPMORGAN: And on free cash flow sensitivity, help us think about the tariff scenario. If WCS differentials widen by $5 per barrel on a sustained basis, what does that do to your annual free cash flow?
+
+DAVE HUGHES - CFO: A $5 widening in WCS differential, sustained for a full year, would reduce our upstream realization by roughly $5 on our net production after accounting for Cold Lake volumes that are priced on a different basis. Call it a $250 to $300 million impact on annual pre-tax cash flow at our volume levels, before any downstream offset from cheaper feedstock at Strathcona. Our integrated position provides a partial natural hedge — probably 30 to 40 cents on the dollar — so the net free cash flow impact is meaningfully lower than the headline number. That's manageable within our current capital allocation framework.
+
+MENNO HULSHOF - TD SECURITIES: Thanks. Menno Hulshof from TD Securities. Brad, on the dividend increase to $0.44 — is the payout ratio framework still what guides the board's decision, or has there been any shift toward thinking about a fixed growth rate?
+
+BRAD CORSON - CEO: Our dividend philosophy is grounded in sustainability through the commodity cycle, not a fixed payout ratio or a committed growth rate. What I can tell you is that we have grown the dividend every year for going on 29 years — through oil price collapses, the pandemic, and all manner of dislocations — and we intend to continue that record. The 13% increase reflects our confidence in the business's earnings power at mid-cycle prices and our desire to provide a meaningful and growing income stream alongside the NCIB. You should expect continued dividend growth as the business continues to improve.
+
+MENNO HULSHOF - TD SECURITIES: Last one from me — on the tariff risk disclosure, that's new language versus prior quarters. Should investors interpret that as the board having gamed out a downside scenario where you would actually cut capital?
+
+BRAD CORSON - CEO: No. We disclosed it because it's a material uncertainty that we're required to address transparently, not because we've stress-tested ourselves into a capital reduction scenario. At $70 WTI and any realistic tariff scenario we've modelled, this company generates enough free cash flow to fund the capital program and maintain shareholder returns. A tariff would hurt the industry broadly, but Imperial's integrated model and balance sheet position us better than most to absorb it.
+
+OPERATOR: This concludes Imperial Oil's Q4 2024 earnings call. Thank you.
