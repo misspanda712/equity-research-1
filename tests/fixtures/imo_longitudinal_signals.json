@@ -1,0 +1,386 @@
+[
+  {
+    "ticker": "IMO",
+    "quarter": "Q1",
+    "year": 2023,
+    "date": "2023-04-28",
+    "qualitative": {
+      "capex": {
+        "tone": "cautious",
+        "specificity": "low",
+        "guidance_given": false,
+        "key_phrases": ["maintaining flexibility", "disciplined approach to spending"],
+        "yoy_direction": "stable"
+      },
+      "production": {
+        "tone": "cautious",
+        "specificity": "low",
+        "guidance_given": false,
+        "key_phrases": ["operating within guidance range", "subject to planned turnaround activity"],
+        "yoy_direction": "stable"
+      },
+      "buybacks_dividends": {
+        "tone": "neutral",
+        "key_phrases": ["evaluating shareholder return options"],
+        "action_taken": "maintained"
+      },
+      "hedging": {
+        "tone": "none",
+        "key_phrases": []
+      },
+      "risks": {
+        "new_risks_mentioned": ["WCS differential widening", "regulatory uncertainty on carbon pricing"],
+        "recurring_risks": ["commodity price volatility", "labour availability"],
+        "overall_risk_tone": "elevated"
+      }
+    },
+    "overall_tone": "cautious",
+    "uncertainty_markers_count": 14,
+    "macro_themes": ["WCS differentials", "carbon pricing", "Transmountain pipeline"],
+    "financials": {
+      "production_kboed": 388,
+      "operating_cash_flow_mm": 510,
+      "capex_actual_mm": 180,
+      "capex_guidance_mm": null,
+      "net_income_mm": 310,
+      "dividend_per_share": 0.17,
+      "buyback_mm": 120
+    }
+  },
+  {
+    "ticker": "IMO",
+    "quarter": "Q2",
+    "year": 2023,
+    "date": "2023-07-28",
+    "qualitative": {
+      "capex": {
+        "tone": "cautious",
+        "specificity": "low",
+        "guidance_given": false,
+        "key_phrases": ["disciplined capital allocation", "focused on high-return projects"],
+        "yoy_direction": "stable"
+      },
+      "production": {
+        "tone": "cautious",
+        "specificity": "medium",
+        "guidance_given": false,
+        "key_phrases": ["operations running as planned", "Kearl performance in line with expectations"],
+        "yoy_direction": "stable"
+      },
+      "buybacks_dividends": {
+        "tone": "neutral",
+        "key_phrases": ["continued NCIB purchases"],
+        "action_taken": "maintained"
+      },
+      "hedging": {
+        "tone": "none",
+        "key_phrases": []
+      },
+      "risks": {
+        "new_risks_mentioned": ["external factors creating near-term uncertainty"],
+        "recurring_risks": ["WCS differentials", "commodity price volatility"],
+        "overall_risk_tone": "elevated"
+      }
+    },
+    "overall_tone": "cautious",
+    "uncertainty_markers_count": 12,
+    "macro_themes": ["WCS differentials", "OPEC production cuts", "external factors"],
+    "financials": {
+      "production_kboed": 392,
+      "operating_cash_flow_mm": 480,
+      "capex_actual_mm": 195,
+      "capex_guidance_mm": null,
+      "net_income_mm": 290,
+      "dividend_per_share": 0.17,
+      "buyback_mm": 130
+    }
+  },
+  {
+    "ticker": "IMO",
+    "quarter": "Q3",
+    "year": 2023,
+    "date": "2023-11-03",
+    "qualitative": {
+      "capex": {
+        "tone": "neutral",
+        "specificity": "medium",
+        "guidance_given": true,
+        "key_phrases": ["disciplined capital program on track", "investment supporting long-term reliability"],
+        "yoy_direction": "increase"
+      },
+      "production": {
+        "tone": "neutral",
+        "specificity": "medium",
+        "guidance_given": true,
+        "key_phrases": ["Kearl achieving improved reliability", "production trending toward upper end"],
+        "yoy_direction": "increase"
+      },
+      "buybacks_dividends": {
+        "tone": "bullish",
+        "key_phrases": ["strong free cash flow supporting returns", "NCIB fully utilized"],
+        "action_taken": "maintained"
+      },
+      "hedging": {
+        "tone": "none",
+        "key_phrases": []
+      },
+      "risks": {
+        "new_risks_mentioned": [],
+        "recurring_risks": ["WCS differentials", "commodity price volatility", "external factors"],
+        "overall_risk_tone": "normal"
+      }
+    },
+    "overall_tone": "mixed",
+    "uncertainty_markers_count": 8,
+    "macro_themes": ["WCS differentials", "Transmountain pipeline commissioning"],
+    "financials": {
+      "production_kboed": 407,
+      "operating_cash_flow_mm": 590,
+      "capex_actual_mm": 210,
+      "capex_guidance_mm": null,
+      "net_income_mm": 380,
+      "dividend_per_share": 0.17,
+      "buyback_mm": 145
+    }
+  },
+  {
+    "ticker": "IMO",
+    "quarter": "Q4",
+    "year": 2023,
+    "date": "2024-02-02",
+    "qualitative": {
+      "capex": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["disciplined and growing capital program", "2024 capex of $1.7 to $1.9 billion", "investing in long-term value"],
+        "yoy_direction": "increase"
+      },
+      "production": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["2024 production guidance of 420 to 440 koebd", "Kearl reliability improvements delivering results"],
+        "yoy_direction": "increase"
+      },
+      "buybacks_dividends": {
+        "tone": "bullish",
+        "key_phrases": ["dividend increase of 6 percent", "active NCIB reflecting balance sheet strength"],
+        "action_taken": "increase"
+      },
+      "hedging": {
+        "tone": "none",
+        "key_phrases": []
+      },
+      "risks": {
+        "new_risks_mentioned": [],
+        "recurring_risks": ["commodity price volatility", "regulatory environment"],
+        "overall_risk_tone": "normal"
+      }
+    },
+    "overall_tone": "confident",
+    "uncertainty_markers_count": 5,
+    "macro_themes": ["Transmountain pipeline", "Canadian energy competitiveness"],
+    "financials": {
+      "production_kboed": 421,
+      "operating_cash_flow_mm": 650,
+      "capex_actual_mm": 225,
+      "capex_guidance_mm": 1800,
+      "net_income_mm": 430,
+      "dividend_per_share": 0.18,
+      "buyback_mm": 160
+    }
+  },
+  {
+    "ticker": "IMO",
+    "quarter": "Q1",
+    "year": 2024,
+    "date": "2024-04-26",
+    "qualitative": {
+      "capex": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["on track with our disciplined $1.8 billion program", "investing to maximize long-term value"],
+        "yoy_direction": "increase"
+      },
+      "production": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["first quarter production of 433 koebd", "on track to meet full-year guidance"],
+        "yoy_direction": "increase"
+      },
+      "buybacks_dividends": {
+        "tone": "bullish",
+        "key_phrases": ["robust NCIB activity", "evaluating further dividend increase"],
+        "action_taken": "maintained"
+      },
+      "hedging": {
+        "tone": "none",
+        "key_phrases": []
+      },
+      "risks": {
+        "new_risks_mentioned": ["tariff uncertainty on cross-border trade", "potential US energy policy shifts"],
+        "recurring_risks": ["commodity price volatility", "WCS differentials"],
+        "overall_risk_tone": "normal"
+      }
+    },
+    "overall_tone": "confident",
+    "uncertainty_markers_count": 6,
+    "macro_themes": ["tariffs", "US-Canada trade", "Transmountain utilization"],
+    "financials": {
+      "production_kboed": 433,
+      "operating_cash_flow_mm": 720,
+      "capex_actual_mm": 410,
+      "capex_guidance_mm": 1800,
+      "net_income_mm": 510,
+      "dividend_per_share": 0.18,
+      "buyback_mm": 175
+    }
+  },
+  {
+    "ticker": "IMO",
+    "quarter": "Q2",
+    "year": 2024,
+    "date": "2024-07-26",
+    "qualitative": {
+      "capex": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["disciplined program tracking to plan", "capital efficiency remains a core priority"],
+        "yoy_direction": "increase"
+      },
+      "production": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["second quarter production of 428 koebd", "Kearl at 97% reliability", "upper end of guidance range in reach"],
+        "yoy_direction": "increase"
+      },
+      "buybacks_dividends": {
+        "tone": "bullish",
+        "key_phrases": ["NCIB reflects our confidence in the business", "strong free cash flow generation"],
+        "action_taken": "maintained"
+      },
+      "hedging": {
+        "tone": "passive",
+        "key_phrases": ["monitoring WCS basis risk", "evaluating hedging tools as differentials tighten"]
+      },
+      "risks": {
+        "new_risks_mentioned": ["tariff sensitivity now quantified at approximately $100M annual impact at 25%"],
+        "recurring_risks": ["WCS differentials", "commodity price volatility"],
+        "overall_risk_tone": "normal"
+      }
+    },
+    "overall_tone": "confident",
+    "uncertainty_markers_count": 5,
+    "macro_themes": ["tariffs", "WCS differentials", "OPEC+ compliance"],
+    "financials": {
+      "production_kboed": 428,
+      "operating_cash_flow_mm": 760,
+      "capex_actual_mm": 440,
+      "capex_guidance_mm": 1800,
+      "net_income_mm": 540,
+      "dividend_per_share": 0.18,
+      "buyback_mm": 185
+    }
+  },
+  {
+    "ticker": "IMO",
+    "quarter": "Q3",
+    "year": 2024,
+    "date": "2024-11-01",
+    "qualitative": {
+      "capex": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["full-year capex tracking toward $1.85 billion", "disciplined investment underpinning multi-year growth"],
+        "yoy_direction": "increase"
+      },
+      "production": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["third quarter production of 432 koebd", "on track to exceed full-year guidance midpoint"],
+        "yoy_direction": "increase"
+      },
+      "buybacks_dividends": {
+        "tone": "bullish",
+        "key_phrases": ["NCIB pace accelerated in Q3", "dividend policy reflects durable earnings power"],
+        "action_taken": "maintained"
+      },
+      "hedging": {
+        "tone": "active",
+        "key_phrases": ["WCS hedges in place for Q4", "basis protection on approximately 30% of Kearl volumes"]
+      },
+      "risks": {
+        "new_risks_mentioned": ["WCS differential pressure resuming as pipeline fills"],
+        "recurring_risks": ["commodity price volatility", "tariff uncertainty", "regulatory environment"],
+        "overall_risk_tone": "normal"
+      }
+    },
+    "overall_tone": "confident",
+    "uncertainty_markers_count": 4,
+    "macro_themes": ["WCS differentials", "tariffs", "Transmountain full utilization"],
+    "financials": {
+      "production_kboed": 432,
+      "operating_cash_flow_mm": 800,
+      "capex_actual_mm": 470,
+      "capex_guidance_mm": 1850,
+      "net_income_mm": 570,
+      "dividend_per_share": 0.18,
+      "buyback_mm": 200
+    }
+  },
+  {
+    "ticker": "IMO",
+    "quarter": "Q4",
+    "year": 2024,
+    "date": "2025-02-07",
+    "qualitative": {
+      "capex": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["2025 capex of $2.1 billion supports next phase of growth", "disciplined and ambitious program", "highest capex guidance in company history"],
+        "yoy_direction": "increase"
+      },
+      "production": {
+        "tone": "bullish",
+        "specificity": "high",
+        "guidance_given": true,
+        "key_phrases": ["2025 production guidance 430 to 440 koebd", "Kearl exiting 2024 at record throughput", "Strathcona renewable diesel project on schedule"],
+        "yoy_direction": "increase"
+      },
+      "buybacks_dividends": {
+        "tone": "bullish",
+        "key_phrases": ["dividend increased 13 percent to $0.22 per share", "NCIB renewed for $1.5 billion", "returning capital at record pace"],
+        "action_taken": "increase"
+      },
+      "hedging": {
+        "tone": "active",
+        "key_phrases": ["WCS differential hedges covering 35% of 2025 Kearl volumes", "first time hedging at this scale", "tariff sensitivity fully quantified and partially mitigated"]
+      },
+      "risks": {
+        "new_risks_mentioned": ["tariff impact quantified at $150M at 25% tariff rate", "WCS basis risk under pipeline-constrained scenario"],
+        "recurring_risks": ["commodity price volatility", "regulatory environment", "labour market"],
+        "overall_risk_tone": "normal"
+      }
+    },
+    "overall_tone": "confident",
+    "uncertainty_markers_count": 3,
+    "macro_themes": ["tariffs", "WCS differentials", "energy transition", "Transmountain"],
+    "financials": {
+      "production_kboed": 438,
+      "operating_cash_flow_mm": 890,
+      "capex_actual_mm": 520,
+      "capex_guidance_mm": 2100,
+      "net_income_mm": 620,
+      "dividend_per_share": 0.22,
+      "buyback_mm": 220
+    }
+  }
+]

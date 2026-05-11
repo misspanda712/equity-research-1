@@ -43,6 +43,18 @@ def build_parser() -> argparse.ArgumentParser:
         default="auto",
         help="Transcript source: edgar (SEC EDGAR press releases), motleyfool, or auto (EDGAR first, fallback to Motley Fool)",
     )
+    parser.add_argument(
+        "--mode",
+        choices=["diff", "longitudinal"],
+        default="diff",
+        help="diff: compare two most recent quarters (default). longitudinal: analyze language trends over time.",
+    )
+    parser.add_argument(
+        "--years",
+        type=int,
+        default=5,
+        help="Number of years to analyze in longitudinal mode (default: 5)",
+    )
     return parser
 
 
@@ -90,6 +102,31 @@ def main():
     ticker = args.ticker.upper()
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.mode == "longitudinal":
+        if args.use_fixtures:
+            print(
+                "Note: --use-fixtures is not applicable in longitudinal mode. Fetching from EDGAR.",
+                file=sys.stderr,
+            )
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            print(
+                "Error: ANTHROPIC_API_KEY is not set. "
+                "Copy .env.example to .env and add your key, or set the environment variable.",
+                file=sys.stderr,
+            )
+            sys.exit(1)
+        try:
+            from src.longitudinal import run_longitudinal_analysis
+            output_path = run_longitudinal_analysis(ticker, args.years, str(output_dir))
+            print(f"Report written to: {output_path}")
+        except (ValueError, EnvironmentError) as e:
+            print(f"Error: {e}", file=sys.stderr)
+            sys.exit(1)
+        except Exception as e:
+            print(f"Error running longitudinal analysis: {e}", file=sys.stderr)
+            sys.exit(1)
+        return
 
     if args.use_fixtures:
         print(f"Loading fixture transcripts for {ticker}...")
